@@ -25,19 +25,15 @@ For a full list of available icons see [the SVG directory](resources/svg) or pre
 
 ## Installation
 
-#### For Phosphor Icons v1
+### For Phosphor Icons v1
 ```bash
 composer require codeat3/blade-phosphor-icons:^1.0
 ```
 
-#### For Phosphor Icons v2
+### For Phosphor Icons v2
 ```bash
 composer require codeat3/blade-phosphor-icons:^2.0
 ```
-
-### Caching Icons
-
-Caching icons will significantly improve performance in production. Make sure your deployment script runs [`php artisan optimize`](https://laravel.com/docs/deployment#optimization), or `php artisan icons:cache` if you only want to cache Blade icons.
 
 ## Updating
 
@@ -46,6 +42,10 @@ Please refer to [`the upgrade guide`](UPGRADE.md) when updating the library.
 ## Blade Icons
 
 Blade Phosphor Icons uses Blade Icons under the hood. Please refer to [the Blade Icons readme](https://github.com/blade-ui-kit/blade-icons) for additional functionality. We also recommend to [enable icon caching](https://github.com/blade-ui-kit/blade-icons#caching) with this library.
+
+## Caching Icons
+
+It's a good idea to add the `icons:cache` command as part of your deployment pipeline and always cache icons in production. This will significantly improve performance of the application. Refer [Caching](https://github.com/driesvints/blade-icons?tab=readme-ov-file#caching) section for details.
 
 ## Configuration
 
